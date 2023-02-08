@@ -1,6 +1,6 @@
 .catalog {
   display: grid;
-  grid-template-columns: repeat(1, $size-column);
+  grid-template-columns: $size-column;
   justify-content: center;
   gap: 48px;
 
@@ -13,7 +13,7 @@
   }
 
   @media (min-width: 1024px) {
-      grid-template-columns: repeat(4, $size-column);
+    grid-template-columns: repeat(4, $size-column);
   }
 
   &__card {
